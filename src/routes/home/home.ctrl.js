@@ -11,4 +11,4 @@ const login =  (req, res) => {
 module.exports = {
     home, 
     login, 
-}; 
+};
