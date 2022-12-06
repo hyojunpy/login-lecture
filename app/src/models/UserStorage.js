@@ -16,6 +16,20 @@ static getUsers(...fields) {
     }, {});
     return newUsers;
 }
+
+static getUserInfo(id){
+    const users = this.#users; 
+    const idx = users.id.indexOf(id); //User의 id를 받아와 index를 찾음
+    const userkeys = Object.keys(users); //users의 키값들로만 리스트 생성
+    const userInfo = userkeys.reduce((newUsers, info) =>{
+        newUsers[info] = users[info][idx]; //위에서 찾은 index로 정보를 넣음
+        return newUsers;
+    }, {});
+
+    return userInfo;
+}
 }
 
 module.exports = UserStorage;
+
+//MVC의 모델 만들기 부분 다시 보기
