@@ -19,9 +19,15 @@ const process = {
     login : (req, res) => {
         const user = new User(req.body); 
         const response = user.login(); 
-        console.log(response);
         return res.json(response); //클라이언트에 json형태로 응답
     },
+
+    register : (req, res) => {
+        const user = new User(req.body); 
+        const response = user.register(); 
+        return res.json(response); //클라이언트에 json형태로 응답
+    },
+
 };
 
 module.exports = {
