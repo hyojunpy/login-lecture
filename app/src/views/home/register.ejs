@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="js/home/css/home/login.css">
-    <script src = "/js/home/login.js" defer></script>
+    <script src = "/js/home/register.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -19,7 +19,7 @@
             <input id = "name" type="text" placeholder="이름"/>
             <input id = "psword" type="password" placeholder="비밀번호"/> <!--type 이 password 일때 텍스트를 안보이기 할 수 있음-->
             <input id = "confirm-psword" type="password" placeholder="비밀번호 확인"/> <!--type 이 password 일때 텍스트를 안보이기 할 수 있음-->
-            <button>SIGN UP</button>
+            <p id="button">SIGN UP</p> <!--form 형식에서 button을 쓰면 새로고침 되기 때문에 p 태그를 사용-->
             <p class="message">Already registered? <a href="/login">login</a></p>
           </form>
         </div>
